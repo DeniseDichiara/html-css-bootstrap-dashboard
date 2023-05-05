@@ -1,8 +1,7 @@
 nav {
+    /**
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100px;
+    align-items: center; */
 }
 
 main{
@@ -11,7 +10,12 @@ main{
 }
 
 .my_mobile-logo{
-    width: 10%
+    width: 50px
+}
+
+.my_bell{
+    width: 50px;
+    align-self: center;
 }
 
 .my_side-bar{
@@ -36,8 +40,6 @@ main{
 
 .my_upper-section{
     background-color: #1b72e8;
-    height: 300px;
-    width: 100%;
 }
 
 .my_lower-section{
@@ -60,7 +62,7 @@ main{
 
 .my_button{
     background-color: #165bba;
-    border-radius: 20px;
+    border-radius: 15px;
     border: none;
 }
 
