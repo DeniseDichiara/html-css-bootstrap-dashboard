@@ -58,3 +58,21 @@ main{
     border: 1px solid white;
 }
 
+.my_button{
+    background-color: #165bba;
+    border-radius: 20px;
+    border: none;
+}
+
+.my_button-plus{
+    background-color: #165bba;
+    border-radius: 50%;
+    border: none;
+}
+
+.my_button-angles-right{
+    background-color: #1b72e8;
+    border: none;
+}
+
+
