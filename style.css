@@ -1,0 +1,33 @@
+nav {
+    text-align: right;
+    background-color: magenta;
+    height: 100px;
+}
+
+main{
+    display: flex;
+}
+
+.my_side-bar{
+    background-color: coral;
+    width: 100px;
+    height: 1000px;
+}
+
+.my_section{
+    height: 1000px;
+    width: calc(100% - 100px);
+}
+
+.my_upper-section{
+    background-color: goldenrod;
+    height: 300px;
+    width: 100%;
+}
+
+.my_lower-section{
+    background-color: #1b72e8;
+    height: 700px;
+    width: 100%;
+}
+
