@@ -1,6 +1,7 @@
 nav {
-    text-align: right;
-    background-color: magenta;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     height: 100px;
 }
 
@@ -9,11 +10,15 @@ main{
     flex-direction: row;
 }
 
+.my_mobile-logo{
+    width: 10%
+}
+
 .my_side-bar{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: coral;
+    background-color: #051e34;
     width: 100px;
     height: 1000px;
 }
