@@ -6,9 +6,13 @@ nav {
 
 main{
     display: flex;
+    flex-direction: row;
 }
 
 .my_side-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: coral;
     width: 100px;
     height: 1000px;
@@ -29,5 +33,9 @@ main{
     background-color: #1b72e8;
     height: 700px;
     width: 100%;
+}
+
+.my_p-white{
+    color: white;
 }
 
