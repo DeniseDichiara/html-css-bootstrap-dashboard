@@ -18,6 +18,12 @@ main{
     height: 1000px;
 }
 
+.my_flex-colum{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
 .my_section{
     height: 1000px;
     width: calc(100% - 100px);
