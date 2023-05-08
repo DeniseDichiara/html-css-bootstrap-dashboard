@@ -68,6 +68,10 @@ main{
     width: 100%;
 }
 
+.my_table-md{
+    display: none;
+}
+
 .my_p-white{
     color: white;
 }
