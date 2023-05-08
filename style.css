@@ -24,13 +24,22 @@ main{
     align-self: center;
 }
 
-
-
-
-.my_icons{
-    align-self: center;
+.my_code-icon{
+    background-color: #f26551;
+    border-radius: 60%;
+}
+.my_btn-gold{
+    background-color: #ffc107;
+    color: white;
 }
 
+
+/*
+.my_icons:hover{
+    background-color: white;
+    opacity: 70%;
+}
+*/
 .my_side-bar{
     display: flex;
     flex-direction: column;
