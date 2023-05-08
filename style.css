@@ -18,6 +18,10 @@ main{
     align-self: center;
 }
 
+.my_icons{
+    align-self: center;
+}
+
 .my_side-bar{
     display: flex;
     flex-direction: column;
@@ -32,6 +36,22 @@ main{
     flex-direction: column;
     align-content: space-between;
 }
+
+.my_bg-side-bar{
+    /*
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    */
+    background-color: #051e34;
+    width: 200px;
+    height: 1000px;
+    /*
+    display: none;
+    */
+}
+
+
 
 .my_section{
     height: 1000px;
