@@ -61,7 +61,9 @@ main{
 }
 
 .my_lower-section{
+    /*
     background-color: lightskyblue;
+    */
     height: 700px;
     width: 100%;
 }
