@@ -1,216 +1,428 @@
 <!DOCTYPE html>
 <html lang="it">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--BOOTSTRAP 5.2-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
-        <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--BOOTSTRAP 5.2-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
-        <!--Font-awesome 6.4.0-->
+    <link rel="stylesheet" href="style.css">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Font-awesome 6.4.0-->
 
-        <!-- Bootstrap js -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    </head>
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 
-    <body>
-        <header>
-            <nav class="d-flex justify-content-around py-3 px-3">
-                <img src="mobile-logo.png" class="my_mobile-logo me-3 " alt="boolean-logo">
+</head>
 
-                <div class="input-group input-group-sm ms-auto my_grey">
-                    <span class="d-flex align-items-center"><i class="fa-solid fa-magnifying-glass ms-4" style="color: #0e0101;"></i></span>
-                    <input type="text" class="form-control my_grey" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                </div>
+<body>
+    <header>
+        <nav class="d-flex justify-content-around py-3 px-3">
+            <img src="mobile-logo.png" class="my_mobile-logo me-3 " alt="boolean-logo">
 
-                <i class="fa-solid fa-list-ul ms-4 my_lg-icons d-none d-lg-inline" style="color: grey;"></i>
+            <div class="input-group input-group-sm ms-auto my_grey">
+                <span class="d-flex align-items-center"><i class="fa-solid fa-magnifying-glass ms-4"
+                        style="color: #0e0101;"></i></span>
+                <input type="text" class="form-control my_grey" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm">
+            </div>
 
-                <i class="fa-solid fa-circle-question ms-4 my_lg-icons d-none d-lg-inline" style="color: grey;"></i>
+            <i class="fa-solid fa-list-ul ms-4 my_lg-icons d-none d-lg-inline" style="color: grey;"></i>
 
-                <i class="fa-solid fa-ellipsis-vertical ms-4 my_lg-icons d-none d-lg-inline" style="color: grey;"></i>
-<!--  <i class="fa-solid fa-bell my_bell ms-4" style="color: #ff8f00;"></i>
+            <i class="fa-solid fa-circle-question ms-4 my_lg-icons d-none d-lg-inline" style="color: grey;"></i>
+
+            <i class="fa-solid fa-ellipsis-vertical ms-4 my_lg-icons d-none d-lg-inline" style="color: grey;"></i>
+            <!--  <i class="fa-solid fa-bell my_bell ms-4" style="color: #ff8f00;"></i>
     -->
-                    <div class="btn-group">
-                        <i type="button" class="fa-solid fa-bell my_bell ms-2 btn" style="color: #ff8f00;" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                        </i>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><button class="dropdown-item" type="button">Profilo</button></li>
-                            <li><button class="dropdown-item" type="button">Fatturazione</button></li>
-                            <li><button class="dropdown-item" type="button">Logout</button></li>
-                        </ul>
-                    </div>
-
-            </nav>
-        </header>
-
-        <main>
-            <div class="my_side-bar d-lg-none">
-                <div class="my_p-white my_flex-colum pt-4 text-center">
-                    <i class="fa-solid fa-house mb-3" style="color: #ffffff;"></i>
-                    <i class="fa-solid fa-chart-simple mb-3" style="color: #ffffff;"></i>
-                    <i class="fa-solid fa-signal mb-3" style="color: #ffffff;"></i>
-                </div>
-
-                <div class="my_p-white pb-5 text-center">
-                    <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
-                </div>
+            <div class="btn-group">
+                <i type="button" class="fa-solid fa-bell my_bell ms-2 btn" style="color: #ff8f00;"
+                    data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                </i>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><button class="dropdown-item" type="button">Profilo</button></li>
+                    <li><button class="dropdown-item" type="button">Fatturazione</button></li>
+                    <li><button class="dropdown-item" type="button">Logout</button></li>
+                </ul>
             </div>
 
-            <div class="my_bg-side-bar align-content-center d-lg-flex d-lg-inline">
-                <div class="d-flex flex-column align-items-lg-start my_p-white align-content-center mt-3">
-                    <div>
-                        <i class="fa-solid fa-house mb-3  me-3" style="color: #ffffff;"></i> Home
-                    </div>
-                    
-                    <div>
-                        <i class="fa-solid fa-chart-simple mb-3 me-3" style="color: #ffffff;"></i>Stats
-                    </div>
+        </nav>
+    </header>
 
-                    <div>
+    <main>
+        <div class="my_side-bar d-lg-none">
+            <div class="my_p-white my_flex-colum pt-4 text-center">
+                <i class="fa-solid fa-house mb-3" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-chart-simple mb-3" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-signal mb-3" style="color: #ffffff;"></i>
+            </div>
+
+            <div class="my_p-white pb-5 text-center">
+                <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
+            </div>
+        </div>
+
+        <div class="my_bg-side-bar align-content-center d-lg-flex d-lg-inline">
+            <div class="d-flex flex-column align-items-lg-start my_p-white align-content-center mt-3">
+                <div>
+                    <i class="fa-solid fa-house mb-3  me-3" style="color: #ffffff;"></i> Home
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-chart-simple mb-3 me-3" style="color: #ffffff;"></i>Stats
+                </div>
+
+                <div>
                     <i class="fa-solid fa-signal mb-3  me-3" style="color: #ffffff;"></i> Signals
-                    </div>
-                    
                 </div>
 
-                <div class="d-flex align-items-lg-end my_p-white text-center mb-3">
-                    <i class="fa-solid fa-gear me-3" style="color: #ffffff;"></i> <p></p>Admin
-                </div>
             </div>
-            
 
-            <div class="my_section">
+            <div class="d-flex align-items-lg-end my_p-white text-center mb-3">
+                <i class="fa-solid fa-gear me-3" style="color: #ffffff;"></i>
+                <p></p>Admin
+            </div>
+        </div>
 
-                <div class="my_upper-section">
 
-                    <div class="container-fluid">
-                        <div class="row">
+        <div class="my_section">
 
-                            <div class="col-12 mt-3 col-md-3 order-md-3">
-                                <p class="my_p-white pe-2">Nuovo Studente 
-                                    <button class="btn btn-primary border border-white ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus " style="color: #ffffff;"></i></button>
+            <div class="my_upper-section">
 
-                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                                        <div class="offcanvas-header">
-                                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                        </div>
-                                        <div class="offcanvas-body">
-                                            <form class="row g-3">
-                                                <div class="col-md-6">
-                                                    <label for="inputEmail4" class="form-label">Nome</label>
-                                                    <input type="text" class="form-control" id="inputEmail4">
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label for="inputPassword4" class="form-label">Cognome</label>
-                                                    <input type="text" class="form-control" id="inputPassword4">
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label for="inputAddress" class="form-label">email</label>
-                                                    <input type="email" class="form-control" id="inputEmail4">
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label for="inputAddress2" class="form-label">Password</label>
-                                                    <input type="password" class="form-control" id="inputPassword4">
-                                                </div>
-                                                <div class="col-md-5">
-                                                    <label for="inputAddress" class="form-label">email</label>
-                                                    <div class="input-group-text">@</div>
+                <div class="container-fluid">
+                    <div class="row">
 
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label for="inputAddress2" class="form-label">Password</label>
-                                                    <input type="password" class="form-control" id="inputPassword4">
-                                                </div>
+                        <div class="col-12 mt-3 col-md-3 order-md-3">
+                            <p class="my_p-white pe-2">Nuovo Studente
+                                <button class="btn btn-primary border border-white ms-2" type="button"
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight"><i class="fa-solid fa-plus "
+                                        style="color: #ffffff;"></i></button>
 
-                                                <div class="col-12">
-                                                    <label for="inputAddress" class="form-label">Indirizzo</label>
-                                                    <input type="text" class="form-control" id="inputAddress">
-                                                </div>
-                                                
-
-                                                <div class="col-md-6">
-                                                    <label for="inputCity" class="form-label">Città</label>
-                                                    <input type="text" class="form-control" id="inputCity">
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <label for="inputState" class="form-label">Stato</label>
-                                                    <select id="inputState" class="form-select">
-                                                    <option selected>Scegli...</option>
-                                                    <option>...</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-md-2">
-                                                    <label for="inputZip" class="form-label">CAP</label>
-                                                    <input type="text" class="form-control" id="inputZip">
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                    <label class="form-check-label" for="gridCheck">
-                                                        Seleziona per proseguire
-                                                    </label>
-                                                </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <button type="submit" class="btn btn-primary">Salva</button>
-                                                    <button type="button" class="btn btn-warning">Svuota</button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </p>
-                            </div>
-
-                            <div class="col-12 col-md-6"> 
-                                <div class="d-flex mt-3">
-                                    <h1 class="my_p-white me-4 px-2 py-2">Boolean</h1> 
-                                    <button class="my_button my_p-white py-1 px-2 mb-3">Piano blaze</button>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
                                 </div>
-                                <div class="d-flex">
-                                    <button class="my_p-white my_button px-2 py-1">3 app</button> 
-                                    <button class="my_button-angles-right mx-2">
-                                        <i class="fa-solid fa-angles-right" style="color: #ffffff;"></i>
-                                    </button> 
-                                    <button class="my_button-plus px-2 py-1 d-lg-none">
-                                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
-                                    </button> 
+                                <div class="offcanvas-body">
+                                    <form class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="inputEmail4" class="form-label">Nome</label>
+                                            <input type="text" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="inputPassword4" class="form-label">Cognome</label>
+                                            <input type="text" class="form-control" id="inputPassword4">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="inputAddress" class="form-label">email</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="inputAddress2" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="inputPassword4">
+                                        </div>
+                                        <div class="col-md-5">
+                                            <label for="inputAddress" class="form-label">email</label>
+                                            <div class="input-group-text">@</div>
 
-                                    <div class="my_nascosti-large d-lg-inline">
-                                        <button class="my_p-white my_button px-2 py-1">Boolean mobile app</button>
-                                        <button class="my_p-white my_button px-2 py-1">Boolean web app</button> 
-                                        <button class="my_p-white my_button px-2 py-1">Boolean blog app</button>
-                                    </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="inputAddress2" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="inputPassword4">
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="inputAddress" class="form-label">Indirizzo</label>
+                                            <input type="text" class="form-control" id="inputAddress">
+                                        </div>
+
+
+                                        <div class="col-md-6">
+                                            <label for="inputCity" class="form-label">Città</label>
+                                            <input type="text" class="form-control" id="inputCity">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="inputState" class="form-label">Stato</label>
+                                            <select id="inputState" class="form-select">
+                                                <option selected>Scegli...</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label for="inputZip" class="form-label">CAP</label>
+                                            <input type="text" class="form-control" id="inputZip">
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                <label class="form-check-label" for="gridCheck">
+                                                    Seleziona per proseguire
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-primary">Salva</button>
+                                            <button type="button" class="btn btn-warning">Svuota</button>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
+                            </p>
+                        </div>
 
-                            <div class="col-12 my_p-white mt-3 mb-2 col-md-3">
-                                <p> Studenti online negli ultimi 30 minuti</p>
-                                <h1 class="my_p-white mb-5">
-                                    125
-                                </h1>
+                        <div class="col-12 col-md-6">
+                            <div class="d-flex mt-3">
+                                <h1 class="my_p-white me-4 px-2 py-2">Boolean</h1>
+                                <button class="my_button my_p-white py-1 px-2 mb-3">Piano blaze</button>
                             </div>
+                            <div class="d-flex">
+                                <button class="my_p-white my_button px-2 py-1">3 app</button>
+                                <button class="my_button-angles-right mx-2">
+                                    <i class="fa-solid fa-angles-right" style="color: #ffffff;"></i>
+                                </button>
+                                <button class="my_button-plus px-2 py-1 d-lg-none">
+                                    <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                </button>
+
+                                <div class="my_nascosti-large d-lg-inline">
+                                    <button class="my_p-white my_button px-2 py-1">Boolean mobile app</button>
+                                    <button class="my_p-white my_button px-2 py-1">Boolean web app</button>
+                                    <button class="my_p-white my_button px-2 py-1">Boolean blog app</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 my_p-white mt-3 mb-2 col-md-3">
+                            <p> Studenti online negli ultimi 30 minuti</p>
+                            <h1 class="my_p-white mb-5">
+                                125
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="my_lower-section">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 d-md-none">
+
+                            <!--TODO  PROSSIME CLASSI-->
+                            <table class="table mt-3 mb-3 ">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th scope="col">
+                                            <h1>Prossime classi</h1>
+                                        </th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Nome</th>
+                                        <th>Stato</th>
+                                        <th>Azioni</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2"
+                                                style="color: white;"></i>Classe 75</th>
+                                        <td>
+                                            <button type="button" class="btn btn-success py-0">Done</button>
+                                        </td>
+                                        <td>
+                                            <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2"
+                                                style="color: grey;"></i>
+                                            <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2"
+                                                style="color: grey;"></i>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2"
+                                                style="color: white;"></i>Classe 76</th>
+                                        <td><button type="button" class="btn btn-success py-0">Done</button></td>
+                                        <td>
+                                            <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2"
+                                                style="color: grey;"></i>
+                                            <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2"
+                                                style="color: grey;"></i>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2"
+                                                style="color: white;"></i>Classe 77</th>
+                                        <td><button type="button" class="btn my_btn-gold py-0">process</button></td>
+                                        <td>
+                                            <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2"
+                                                style="color: grey;"></i>
+                                            <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2"
+                                                style="color: grey;"></i>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2"
+                                                style="color: white;"></i>Classe 78</th>
+                                        <td><button type="button" class="btn btn-success py-0">Done</button></td>
+                                        <td>
+                                            <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2"
+                                                style="color: grey;"></i>
+                                            <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2"
+                                                style="color: grey;"></i>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2"
+                                                style="color: white;"></i>Classe 79</th>
+                                        <td><button type="button" class="btn btn-danger py-0">failed</button></td>
+                                        <td>
+                                            <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2"
+                                                style="color: grey;"></i>
+                                            <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2"
+                                                style="color: grey;"></i>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2"
+                                                style="color: white;"></i>Classe 80</th>
+                                        <td><button type="button" class="btn btn-success py-0">Done</button></td>
+                                        <td>
+                                            <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2"
+                                                style="color: grey;"></i>
+                                            <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2"
+                                                style="color: grey;"></i>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2"
+                                                style="color: white;"></i>Classe 81</th>
+                                        <td><button type="button" class="btn btn-danger py-0">failed</button></td>
+                                        <td>
+                                            <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2"
+                                                style="color: grey;"></i>
+                                            <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2"
+                                                style="color: grey;"></i>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2"
+                                                style="color: white;"></i>Classe 82</th>
+                                        <td><button type="button" class="btn btn-success py-0">Done</button></td>
+                                        <td>
+                                            <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2"
+                                                style="color: grey;"></i>
+                                            <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2"
+                                                style="color: grey;"></i>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <!--TODO  F.A.Q.-->
+                            <div class="card">
+                                <h5 class="card-header">F.A.Q.</h5>
+                                <div class="card-body">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingOne">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                                    Come aggiungere un nuovo studente?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingOne"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Clicca sul + all'interno della barra blu in alto.</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingTwo">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                    aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                    Come accedere al mio account?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingTwo"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Clicca sul + all'interno della barra blu in alto</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingThree">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                                    Posso usare questa dashbord da mobile?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingThree"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Clicca sul + all'interno della barra blu in alto
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!--TODO-->
+                            <table class="table mt-3 mb-3 d-md-none">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th scope="col">
+                                            <h1>To do</h1>
+                                        </th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                            </table>
                         </div>
                     </div>
 
-                </div>
-
-                <div class="my_lower-section">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12 d-md-none">
-
-                                <!--TODO  PROSSIME CLASSI-->
-                                <table class="table mt-3 mb-3 ">
+                    <!--TODO  MD-->
+                    <div class="row d-flex">
+                        <div class="col-12 my_table-md d-md-inline col-lg-8 ">
+                            <div class="">
+                                <table class="table mt-3 mb-3">
                                     <thead class="table-light">
                                         <tr>
-                                            <th scope="col"><h1>Prossime classi</h1></th>
+                                            <th scope="col">
+                                                <h1>Prossime classi</h1>
+                                            </th>
+                                            <th scope="col"></th>
                                             <th scope="col"></th>
                                             <th scope="col"></th>
                                             <th scope="col"></th>
@@ -219,295 +431,187 @@
                                     <tbody>
                                         <tr>
                                             <th scope="row">Nome</th>
-                                            <th>Stato</th>
-                                            <th>Azioni</th>
-                                            <td></td>
+                                            <td>Data inizio</td>
+                                            <td>ROI</td>
+                                            <td>Stato</td>
+                                            <td>Azioni</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2" style="color: white;"></i>Classe 75</th>
+                                            <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2"
+                                                    style="color: white;"></i>Classe 75</th>
+                                            <td>15 Feb 2021</td>
+                                            <td>20%</td>
                                             <td>
                                                 <button type="button" class="btn btn-success py-0">Done</button>
                                             </td>
                                             <td>
-                                                <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2" style="color: grey;"></i>
-                                                <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2" style="color: grey;"></i>
+                                                <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2"
+                                                    style="color: grey;"></i>
+                                                <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2"
+                                                    style="color: grey;"></i>
                                             </td>
-                                            <td></td>
                                         </tr>
                                         <tr>
-                                            <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2" style="color: white;"></i>Classe 76</th>
-                                            <td><button type="button" class="btn btn-success py-0">Done</button></td>
+                                            <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2"
+                                                    style="color: white;"></i>Classe 76</th>
+                                            <td>16 Feb 2021</td>
+                                            <td>20%</td>
                                             <td>
-                                                <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2" style="color: grey;"></i>
-                                                <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2" style="color: grey;"></i>
+                                                <button type="button" class="btn btn-success py-0">Done</button>
                                             </td>
-                                            <td></td>
+                                            <td>
+                                                <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2"
+                                                    style="color: grey;"></i>
+                                                <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2"
+                                                    style="color: grey;"></i>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2" style="color: white;"></i>Classe 77</th>
+                                            <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2"
+                                                    style="color: white;"></i>Classe 77</th>
+                                            <td>17 Feb 2021</td>
+                                            <td>20%</td>
                                             <td><button type="button" class="btn my_btn-gold py-0">process</button></td>
-                                            <td> 
-                                                <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2" style="color: grey;"></i>
-                                                <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2" style="color: grey;"></i>
-                                            </td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2" style="color: white;"></i>Classe 78</th>
-                                            <td><button type="button" class="btn btn-success py-0">Done</button></td>
                                             <td>
-                                                <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2" style="color: grey;"></i>
-                                                <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2" style="color: grey;"></i>
+                                                <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2"
+                                                    style="color: grey;"></i>
+                                                <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2"
+                                                    style="color: grey;"></i>
                                             </td>
-                                            <td></td>
                                         </tr>
                                         <tr>
-                                            <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2" style="color: white;"></i>Classe 79</th>
+                                            <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2"
+                                                    style="color: white;"></i>Classe 78</th>
+                                            <td>18 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td>
+                                                <button type="button" class="btn btn-success py-0">Done</button>
+                                            </td>
+                                            <td>
+                                                <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2"
+                                                    style="color: grey;"></i>
+                                                <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2"
+                                                    style="color: grey;"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2"
+                                                    style="color: white;"></i>Classe 79</th>
+                                            <td>19 Feb 2021</td>
+                                            <td>20%</td>
                                             <td><button type="button" class="btn btn-danger py-0">failed</button></td>
                                             <td>
-                                                <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2" style="color: grey;"></i>
-                                                <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2" style="color: grey;"></i>
+                                                <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2"
+                                                    style="color: grey;"></i>
+                                                <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2"
+                                                    style="color: grey;"></i>
                                             </td>
-                                            <td></td>
                                         </tr>
                                         <tr>
-                                            <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2" style="color: white;"></i>Classe 80</th>
-                                            <td><button type="button" class="btn btn-success py-0">Done</button></td>
+                                            <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2"
+                                                    style="color: white;"></i>Classe 80</th>
+                                            <td>20 Feb 2021</td>
+                                            <td>20%</td>
                                             <td>
-                                                <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2" style="color: grey;"></i>
-                                                <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2" style="color: grey;"></i>
+                                                <button type="button" class="btn btn-success py-0">Done</button>
                                             </td>
-                                            <td></td>
+                                            <td>
+                                                <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2"
+                                                    style="color: grey;"></i>
+                                                <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2"
+                                                    style="color: grey;"></i>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2" style="color: white;"></i>Classe 81</th>
+                                            <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2"
+                                                    style="color: white;"></i>Classe 81</th>
+                                            <td>21 Feb 2021e</td>
+                                            <td>20%</td>
                                             <td><button type="button" class="btn btn-danger py-0">failed</button></td>
                                             <td>
-                                                <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2" style="color: grey;"></i>
-                                                <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2" style="color: grey;"></i>
+                                                <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2"
+                                                    style="color: grey;"></i>
+                                                <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2"
+                                                    style="color: grey;"></i>
                                             </td>
-                                            <td></td>
                                         </tr>
                                         <tr>
-                                            <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2" style="color: white;"></i>Classe 82</th>
-                                            <td><button type="button" class="btn btn-success py-0">Done</button></td>
+                                            <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2"
+                                                    style="color: white;"></i>Classe 82</th>
+                                            <td>22 Feb 2021</td>
+                                            <td>20%</td>
                                             <td>
-                                                <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2" style="color: grey;"></i>
-                                                <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2" style="color: grey;"></i>
+                                                <button type="button" class="btn btn-success py-0">Done</button>
                                             </td>
-                                            <td></td>
+                                            <td>
+                                                <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2"
+                                                    style="color: grey;"></i>
+                                                <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2"
+                                                    style="color: grey;"></i>
+                                            </td>
                                         </tr>
-
                                     </tbody>
                                 </table>
 
-                                <!--TODO  F.A.Q.-->
-                                <table  class="table mt-3 mb-3 d-md-none">
-                                    <thead class="table-light">
-                                        <tr>
-                                            <th scope="col"><h1>F.A.Q.</h1></th>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                        </tr>
-                                    </thead>
-                                                
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="form-floating">
-                                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                                      <option selected>Cliccare sul + nella barra blu in alto</option>
-                                                    </select>
-                                                  </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            </div>
 
-                                <!--TODO-->
-                                <table  class="table mt-3 mb-3 d-md-none">
-                                    <thead class="table-light">
-                                        <tr>
-                                            <th scope="col"><h1>To do</h1></th>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                        </tr>
-                                    </thead>
-                                </table>
+
+                            <table class="table mt-5 mb-3">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th scope="col">
+                                            <h1>F.A.Q.</h1>
+                                        </th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <!--qui inseriesco la regola per il dropdown-->
+                                        <td>Come posso accedere alle info del mio account</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="col-12 my_table-md d-md-inline col-lg-4">
+                            <table class="table mt-3 mb-3">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th scope="col">
+                                            <h1>To do</h1>
+                                        </th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <div class="card col-lg-4" style="width:100%">
+                                <img src="stats.jpeg" class="card-img-top" alt="stats">
+                                <div class="card-body">
+                                    <h4 class="card-title">Utenti attivi</h4>
+                                    <p class="card-text">Lista utenti attivi in piattaforma nell'ultimo mese</p>
+                                    <a href="#" class="card-link">Visualizza report approfondito</a>
+                                </div>
                             </div>
                         </div>
 
-                            <!--TODO  MD-->
-                        <div class="row d-flex">
-                            <div class="col-12 my_table-md d-md-inline col-lg-8 ">
-                                <div class="">
-                                    <table class="table mt-3 mb-3">
-                                        <thead class="table-light">
-                                            <tr>
-                                                <th scope="col"><h1>Prossime classi</h1></th>
-                                                <th scope="col"></th>
-                                                <th scope="col"></th>
-                                                <th scope="col"></th>
-                                                <th scope="col"></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">Nome</th>
-                                                <td>Data inizio</td>
-                                                <td>ROI</td>
-                                                <td>Stato</td>
-                                                <td>Azioni</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2" style="color: white;"></i>Classe 75</th>
-                                                <td>15 Feb 2021</td>
-                                                <td>20%</td>
-                                                <td>
-                                                    <button type="button" class="btn btn-success py-0">Done</button>
-                                                </td>
-                                                <td>
-                                                    <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2" style="color: grey;"></i>
-                                                    <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2" style="color: grey;"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2" style="color: white;"></i>Classe 76</th>
-                                                <td>16 Feb 2021</td>
-                                                <td>20%</td>
-                                                <td>
-                                                    <button type="button" class="btn btn-success py-0">Done</button>
-                                                </td>
-                                                <td>
-                                                    <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2" style="color: grey;"></i>
-                                                    <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2" style="color: grey;"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2" style="color: white;"></i>Classe 77</th>
-                                                <td>17 Feb 2021</td>
-                                                <td>20%</td>
-                                                <td><button type="button" class="btn my_btn-gold py-0">process</button></td>
-                                                <td>
-                                                    <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2" style="color: grey;"></i>
-                                                    <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2" style="color: grey;"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2" style="color: white;"></i>Classe 78</th>
-                                                <td>18 Feb 2021</td>
-                                                <td>20%</td>
-                                                <td>
-                                                    <button type="button" class="btn btn-success py-0">Done</button>
-                                                </td>
-                                                <td>
-                                                    <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2" style="color: grey;"></i>
-                                                    <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2" style="color: grey;"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2" style="color: white;"></i>Classe 79</th>
-                                                <td>19 Feb 2021</td>
-                                                <td>20%</td>
-                                                <td><button type="button" class="btn btn-danger py-0">failed</button></td>
-                                                <td>
-                                                    <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2" style="color: grey;"></i>
-                                                    <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2" style="color: grey;"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2" style="color: white;"></i>Classe 80</th>
-                                                <td>20 Feb 2021</td>
-                                                <td>20%</td>
-                                                <td>
-                                                    <button type="button" class="btn btn-success py-0">Done</button>
-                                                </td>
-                                                <td>
-                                                    <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2" style="color: grey;"></i>
-                                                    <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2" style="color: grey;"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2" style="color: white;"></i>Classe 81</th>
-                                                <td>21 Feb 2021e</td>
-                                                <td>20%</td>
-                                                <td><button type="button" class="btn btn-danger py-0">failed</button></td>
-                                                <td>
-                                                    <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2" style="color: grey;"></i>
-                                                    <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2" style="color: grey;"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row"><i class="fa-solid fa-code my_code-icon me-2 py-2 px-2" style="color: white;"></i>Classe 82</th>
-                                                <td>22 Feb 2021</td>
-                                                <td>20%</td>
-                                                <td>
-                                                    <button type="button" class="btn btn-success py-0">Done</button>
-                                                </td>
-                                                <td>
-                                                    <i class="fa-solid fa-pen border border-dark rounded-3  py-2 px-2 me-2" style="color: grey;"></i>
-                                                    <i class="fa-solid fa-trash border border-dark rounded-3  py-2 px-2" style="color: grey;"></i>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-
-                            </div>
-                            
-
-                                <table  class="table mt-5 mb-3">
-                                    <thead class="table-light">
-                                        <tr>
-                                            <th scope="col"><h1>F.A.Q.</h1></th>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                        </tr>
-                                    </thead>
-                                                
-                                    <tbody>
-                                        <tr>
-                                            <!--qui inseriesco la regola per il dropdown-->
-                                            <td>Come posso accedere alle info del mio account</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <div class="col-12 my_table-md d-md-inline col-lg-4">
-                                    <table  class="table mt-3 mb-3">
-                                        <thead class="table-light">
-                                            <tr>
-                                                <th scope="col"><h1>To do</h1></th>
-                                                <th scope="col"></th>
-                                                <th scope="col"></th>
-                                                <th scope="col"></th>
-                                            </tr>
-                                        </thead>
-                                    </table>
-                                    <div class="card col-lg-4" style="width:100%">
-                                        <img src="stats.jpeg" class="card-img-top" alt="stats">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Utenti attivi</h4>
-                                            <p class="card-text">Lista utenti attivi in piattaforma nell'ultimo mese</p>
-                                            <a href="#" class="card-link">Visualizza report approfondito</a>
-                                        </div>
-                                    </div>
-                            </div>
-
-
-                                
-                        </div>
-                            
 
 
                     </div>
+
+
+
                 </div>
-
             </div>
-        </main>
 
-    </body>
+        </div>
+    </main>
+
+</body>
+
 </html>
