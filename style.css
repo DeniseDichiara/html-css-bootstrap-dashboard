@@ -72,6 +72,7 @@ main{
 .my_section{
     height: 1000px;
     width: calc(100% - 100px);
+    overflow: auto;
 }
 
 .my_upper-section{
