@@ -43,11 +43,6 @@ main{
 }
 
 .my_bg-side-bar{
-    /*
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    */
     background-color: #051e34;
     width: 200px;
     height: 1000px;
